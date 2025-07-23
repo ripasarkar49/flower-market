@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.noto-serif-font {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.display-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dark {
+    color: #252432;
+}
+
+.primary-color {
+    color: #E95A08;
+}
+
+/* navbar section */
+header {
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+ul li {
+    list-style: none;
+
+}
+
+ul a {
+    text-decoration: none;
+    color: #8987A1;
+}
+
+.card-icon {
+    gap: 10px;
+}
+
+.menu-items {
+    gap: 48px;
+}
+
+.menu-items ul {
+    gap: 48px;
+}
+
+/* banner-section */
+.banner-section {
+    margin: 120px 0px;
+    align-items: end;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.banner {
+    margin-bottom: 0px;
+    width: 50%;
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.banner-subtitle {
+    font-size: 22px;
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+/* Mobile responsive */
+@media screen and (max-width:576px) {
+
+    /* header */
+    .menu-items ul {
+        display: none;
+    }
+
+    .banner-section {
+        flex-direction: column-reverse;
+
+    }
+
+    .banner {
+        width: 100%;
+    }
+
+    .banner-title {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+}
