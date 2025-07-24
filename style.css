@@ -14,6 +14,7 @@
     font-optical-sizing: auto;
     font-style: normal;
 }
+
 /* shared style */
 .display-flex {
     display: flex;
@@ -152,11 +153,62 @@ main {
     width: 100%;
 }
 
+/* plant lover section */
+.plant-lover {
+    max-width: 1140px;
+    position: absolute;
+}
+
+.plant-container {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: end;
+    gap: 1.4rem;
+}
+
+.badge {
+    position: absolute;
+    top: 20px;
+    left: 350px;
+    width: 25%;
+    z-index: 10px;
+}
+
+.badge img {
+    width: 70%;
+}
+
+.plant-title2 {
+    font-weight: bold;
+    font-size: 3.12rem;
+    color: #000000;
+    padding-left: 1rem;
+    line-height: 3rem;
+}
+
+.flower-description {
+    margin: 2.3rem 0rem;
+}
+
+#plants-description2 li {
+    list-style: disc;
+    line-height: 2.5rem;
+    font-size: 1.37rem;
+    color: rgba(0, 0, 0, 0.5);
+
+}
+
+.lover-man img {
+    width: 100%;
+}
+
 /* Mobile responsive */
 @media screen and (max-width:576px) {
 
     /* header */
-    .menu-items ul {
+    .menu-items ul,
+    .badge {
         display: none;
     }
 
@@ -180,5 +232,13 @@ main {
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
     }
+
+    /* plant lover */
+    .plant-container {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
 
 }
