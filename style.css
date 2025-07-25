@@ -53,6 +53,7 @@ ul li {
 }
 
 ul a {
+    font-size: 1rem;
     text-decoration: none;
     color: #8987A1;
 }
@@ -341,15 +342,44 @@ main {
     font-size: 1rem;
     font-weight: 400;
 }
+
 /* footer section */
+footer {
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+
+.website-logo {
+    width: 22rem;
+}
+
+.footer-section {
+    padding: 2rem 0rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-items {
+    line-height: 2rem;
+}
+
+.features-items {
+    line-height: 2rem;
+}
+
+.link-items {
+    display: flex;
+    gap: 1.3rem;
+
+}
 
 /* Mobile responsive */
 @media screen and (max-width:576px) {
 
     /* header */
     .menu-items ul,
-    .badge,
-    .join-section {
+    .badge {
         display: none;
     }
 
@@ -381,9 +411,28 @@ main {
         justify-content: center;
     }
 
+    .join-section {}
+
+    .colorful-branch {
+
+        padding: 20px 30px;
+
+
+    }
+
+    .join-title {
+        font-size: 1.2rem;
+    }
+
     /* latest-deal-section */
     .latest-container {
         flex-direction: column;
     }
 
+    /* footer section */
+    .footer-section {
+        flex-direction: column;
+        
+        
+    }
 }
