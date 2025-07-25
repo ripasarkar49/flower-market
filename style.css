@@ -371,6 +371,7 @@ footer {
     padding: 2rem 0rem;
     display: flex;
     justify-content: space-between;
+
 }
 
 .home-items {
@@ -384,6 +385,7 @@ footer {
 .link-items {
     display: flex;
     gap: 1.3rem;
+
 
 }
 
@@ -431,10 +433,10 @@ footer {
     }
 
     .join-section {
-    padding-top: 5.5rem;
-    padding-bottom: 6rem;
-    margin-top: 2.5rem;
-}
+        padding-top: 5.5rem;
+        padding-bottom: 6rem;
+        margin-top: 2.5rem;
+    }
 
     .sub-form {
         max-width: 21rem;
@@ -453,4 +455,7 @@ footer {
     .footer-section {
         flex-direction: column;
     }
+
+
+
 }
