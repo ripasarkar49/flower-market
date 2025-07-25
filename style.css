@@ -98,7 +98,7 @@ ul a {
 
 /* main section */
 main {
-    max-width: 1140px;
+
     margin: 0 auto;
 }
 
@@ -156,7 +156,8 @@ main {
 /* plant lover section */
 .plant-lover {
     max-width: 1140px;
-    position: absolute;
+    margin: 0 auto;
+    position: relative;
 }
 
 .plant-container {
@@ -169,10 +170,10 @@ main {
 
 .badge {
     position: absolute;
-    top: 20px;
+    top: -100px;
     left: 350px;
     width: 25%;
-    z-index: 10px;
+
 }
 
 .badge img {
@@ -203,12 +204,152 @@ main {
     width: 100%;
 }
 
+/* latest deal section */
+.latest-deal-section {
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+
+.latest-container {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.bloom {
+
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4)), url("assets/deal-bloom.png");
+}
+
+.ana {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4)), url("assets/deal-ana.png");
+}
+
+.zabo {
+
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4)), url("assets/deal-zabo.png");
+}
+
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    flex: 1;
+}
+
+.right-column {
+    flex: 2;
+}
+
+.card {
+    position: relative;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1.3rem;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card.zabo {
+    height: 100%;
+}
+
+.text {
+    padding: 1.2rem 0rem;
+}
+
+.zabo-title {
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.bloom-title {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.zabo-shop-link {
+    color: #FFFFFF;
+    padding: 5px 12px;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.bloom-shop-link {
+    color: #FFFFFF;
+    padding: 5px 12px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* join section */
+.join-section {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.colorful-branch {
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(7, 51, 79, 0.4)), url(assets/news-letter-bg.png);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    color: white;
+    padding: 200px 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-align: center;
+}
+
+.join-title {
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.mail {
+    height: 3rem;
+    background: #FFFFFF;
+    color: rgba(0, 0, 0, 0.5);
+    border: none;
+    font-size: 1rem;
+    padding-right: 20rem;
+    padding-left: 1rem;
+}
+
+.sub-button {
+    padding: 1rem 3rem;
+    background: #ff7200;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+/* footer section */
+
 /* Mobile responsive */
 @media screen and (max-width:576px) {
 
     /* header */
     .menu-items ul,
-    .badge {
+    .badge,
+    .join-section {
         display: none;
     }
 
@@ -240,5 +381,9 @@ main {
         justify-content: center;
     }
 
+    /* latest-deal-section */
+    .latest-container {
+        flex-direction: column;
+    }
 
 }
